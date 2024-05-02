@@ -165,10 +165,15 @@ Do
             Dim NotInStartZone As Integer
             NotInStartZone = Abs(InStartZone = 0)
 
-
             Cars(itCar).Y = Cars(itCar).Y * NotInStartZone + StartY * InStartZone
 
-            If Abs(Cars(itCar).X >= StartChangeOfDirection) And Abs(((Cars(itCar).X - StartChangeOfDirection) Mod IntersectionPxDistance) = 0) Then
+            Dim CanChangeDirection As Integer
+            CanChangeDirection = Abs(Cars(itCar).X >= StartChangeOfDirection)
+
+            Dim IsAtIntersection As Integer
+            IsAtIntersection = Abs(((Cars(itCar).X - StartChangeOfDirection) Mod IntersectionPxDistance) = 0)
+
+            If CanChangeDirection And IsAtIntersection Then
 
                 '  DECIDE TO GO LEFT, RIGHT, OR STRAIGHT
                 '  GET A RANDOM NUMBER AND SEE IF IT IS LESS THAN 0.5. SINCE TRUE IS -1 IN QB64, WE NEED TO
