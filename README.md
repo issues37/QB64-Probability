@@ -8,6 +8,8 @@ A member in a Discord server I belong to, who goes by the nickname "issues37", s
 > ( each integer is a boolean that decides if the vehicle (pixel) goes left or right in each "intersection", as if seen from above.. )
 > 
 > did u perhaps ever make a similar project (probability tree) using QB64? looking for inspiration..  did this with IF statements.. perhaps functional style is better?
+>
+> code posted below as image, and as .bas marked issues37 in the GitHub-project folder)
 
 ![Screenshot_20240429-200419_Gallery](https://github.com/TheJoyfulProgrammer/QB64-Probability-Tree/assets/11287410/a6482f47-6169-44d7-8fcc-09e085e29fe5)
 
